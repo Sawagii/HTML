@@ -1,0 +1,374 @@
+<!DOCTYPE html> <!--okreslamy typ dokumentu-->
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8"> <!--oznacza klawiaturę jakiej używamy-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--dostosowanie okna do przeglądarki bez powiększenia pomniejszenia-->
+    <meta name="theme color" content="#F">
+    <meta name="description" content="moja strona internetowa"> <!--meta tag oznaczający opis strony-->
+    <title>Moja strona</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+    <section id="hero" class="hero-section"><!--nagłówek-->
+        <div class="container">
+            <header class="header">
+                <div class="hero-logo">
+                    <svg width="50px" height="50px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#80A1B4">
+                        <path
+                            d="M11.9996 14.9995C13.6565 14.9995 14.9996 13.6564 14.9996 11.9995C14.9996 10.3427 13.6565 8.99951 11.9996 8.99951C10.3428 8.99951 8.99963 10.3427 8.99963 11.9995C8.99963 13.6564 10.3428 14.9995 11.9996 14.9995Z"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M13 9C13 9 14 7 14 5C14 3 12 1 12 1C12 1 10 3 10 5C10 7 11 9 11 9" stroke="#80A1B4"
+                            stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M9 11C9 11 7 10 5 10C3 10 1 12 1 12C1 12 3 14 5 14C7 14 9 13 9 13" stroke="#80A1B4"
+                            stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M13 15C13 15 14 17 14 19C14 21 12 23 12 23C12 23 10 21 10 19C10 17 11 15 11 15"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M15 11C15 11 17 10 19 10C21 10 23 12 23 12C23 12 21 14 19 14C17 14 15 13 15 13"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M10.5858 9.17176C10.5858 9.17176 9.87868 7.05044 8.46447 5.63623C7.05026 4.22202 4.22183 4.22202 4.22183 4.22202C4.22183 4.22202 4.22183 7.05044 5.63604 8.46466C7.05026 9.87887 9.17158 10.586 9.17158 10.586"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M9.17152 13.4142C9.17152 13.4142 7.0502 14.1213 5.63599 15.5355C4.22177 16.9497 4.22177 19.7782 4.22177 19.7782C4.22177 19.7782 7.0502 19.7782 8.46441 18.364C9.87863 16.9497 10.5857 14.8284 10.5857 14.8284"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M14.8285 13.4142C14.8285 13.4142 16.9498 14.1213 18.364 15.5355C19.7782 16.9497 19.7782 19.7782 19.7782 19.7782C19.7782 19.7782 16.9498 19.7782 15.5356 18.364C14.1214 16.9497 13.4143 14.8284 13.4143 14.8284"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M13.4142 9.17176C13.4142 9.17176 14.1213 7.05044 15.5355 5.63623C16.9497 4.22202 19.7782 4.22202 19.7782 4.22202C19.7782 4.22202 19.7782 7.05044 18.364 8.46466C16.9497 9.87887 14.8284 10.586 14.8284 10.586"
+                            stroke="#80A1B4" stroke-width="1.5" stroke-miterlimit="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                    <!--można zmienić tu w html wartości co są nadane w linku z pobranej ikonki-->
+                </div>
+                <nav>
+                    <div class="mobile-menu-icon" id="mobile-menu-icon"> <!--sprawdzić czy dobra nazwa-->
+
+                    <svg class="icon-menu" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5"><path d="M3 5H21" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      <svg class="icon-close" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5"><path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+                    </div>
+
+
+                    <ul class="menu" id="main-menu">
+                        <li><a href="#about">O mnie </a></li>
+                        <li><a href="#interests">Zainteresowania </a></li>
+                        <li><a href="#photos">Zdjęcia </a></li>
+                        <li><a href="#contact">Kontakt </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-content">
+                <h1 class="hero-title">Hej</h1>
+                <p class="hero-lead">Jestem Marta. Fascynuje mnie Japonia i jej unikatowa kultura. Dużo czytam, trochę
+                    gram - planszowo, na komputerze i, aby się trochę zmęczyć, w tenisa. Przypadkowo zostałam kocią mamą
+                    i dobrze odnajduję się w tej roli. </p>
+                <a class="hero-button" href="#about">Poznajmy się</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section"><!--Sekcja O mnie-->
+        <div class="container">
+            <div class="columns-container columns-2-container">
+                <div class="column about-image"> <!--divider na zdjęcie-->
+                    <img src="images/foto.jpg" alt="Moje zdjęcie profilowe">
+                </div>
+                <div class="column about-text"><!--div na tekst-->
+                    <h2 class="section-title">O mnie</h2>
+                    <p><strong>Jestem Marta. </strong>Lubię placki.</p>
+                    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. "</p>
+                    <p>Ogólnie to jestem fascynującą i zajebistą osobą i warto mnie znać</p>
+                    <p>If you use this site regularly and would like to help keep the site on the Internet, please
+                        consider donating a small sum to help pay for the hosting and bandwidth bill..</p>
+                    <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
+                        and demoralized by the charms of pleasure of the moment, so blinded by desire."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section section-violet interest-section"><!--Sekcja zainteresowania-->
+        <div class="container">
+            <div class="columns-container columns-4-container">
+                <div class="column">
+                    <svg width="100px" height="100px" stroke-width="1.5"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                        <path
+                            d="M20.6602 6.99993C23.4216 11.7829 21.7829 17.8988 17 20.6602C12.217 23.4216 6.10113 21.7829 3.33971 16.9999C0.57828 12.217 2.21703 6.1011 6.99996 3.33968C11.7829 0.578252 17.8988 2.217 20.6602 6.99993Z"
+                            stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21.46 15.2419C16.474 11.9395 13.8776 7.44223 13.9223 2.18631" stroke="#FFE5E5"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10.0776 21.8136C9.71062 15.8444 7.11402 11.3472 2.53992 8.75793" stroke="#FFE5E5"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <h3 class="interest-name">Tenis</h3>
+                    <p class="interest-text">Sport nigdy nie był moją ulubioną rzeczą w życiu (obwiniam lata stania na
+                        WF udając, że gramy w siatkówkę), ale był w nim obecny. Okazjonalne narty, chodzenie po górach,
+                        rolki rower i kajaki. Kiedyś nawet trochę akrobatyki przy rurze - choć to akurat zajęcie
+                        wymagające krzepy. Tenis zaś skradł moje serce, każde dobre uderzenie piłki sprawia, że się
+                        cieszę. Tu podbiec i tam doskoczyć. Nie gram długo ani tak dobrze, jakbym chciała, ale sprawia,
+                        że czuję się lepiej. To co, kiedy mecz?
+                    </p>
+                </div>
+                <div class="column">
+                    <svg width="100px" height="100px" viewBox="0 0 24 24"
+                        stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                        <path
+                            d="M5.81249 7C5.81249 7 5.35861 7.62759 4.81552 8.66667M18.1875 7C18.1875 7 18.6414 7.62759 19.1845 8.66667M4.81552 8.66667C4.0067 10.2142 3 12.6743 3 15.3333C5.8125 15.3333 7.49999 17 7.49999 17C7.49999 17 8.62499 22 12 22C15.375 22 16.5 17 16.5 17C16.5 17 18.1875 15.3333 21 15.3333C21 12.6743 19.9933 10.2142 19.1845 8.66667M4.81552 8.66667C4.81552 8.66667 1.875 6.44436 4.81552 2C5.81249 2.55556 8.625 4.77778 8.625 4.77778C8.625 4.77778 10.3125 3.66667 12 3.66667C13.6875 3.66667 15.375 4.77778 15.375 4.77778C15.375 4.77778 18.1875 2.55556 19.3125 2C22.125 6.44456 19.1845 8.66667 19.1845 8.66667"
+                            stroke="#FFE5E5
+" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M11 18L12 18M13 18L12 18M12 18L12 19" stroke="#FFE5E5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.5 12.5L10 14" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M15.5 12.5L14 14" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+
+                    <h3 class="interest-name">Kotki</h3>
+                    <p class="interest-text">Od małego uwielbiałam psy i zawsze chciałam dać psu dom. Z partnerem
+                        zdecydowaliśmy się na zostanie domem tymczasowym. Szczeniak, którego mieliśmy był cudowny, ale
+                        wymagał od nas energii, której nie mieliśmy. Po znalezieniu mu domu na stałe bardzo nam ulżyło.
+                        Do czasu, kiedy fundacja odezwała się znowu - okazało się, że bezzwłocznie potrzebują domu dla
+                        dwoch kociaków. Nie zastanwialiśmy się długo - w końcu to tylko do czasu adopcji. Skradły nasze
+                        serca i od tego czasu rozrabiają już u nas na stałe.
+                    </p>
+                </div>
+                <div class="column">
+                    <svg width="100px" height="100px" stroke-width="1.5"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                        <path
+                            d="M5 15L5.95039 4.54568C5.97849 4.23663 6.23761 4 6.54793 4H20.343C20.6958 4 20.9725 4.30295 20.9405 4.65432L20.0496 14.4543C20.0215 14.7634 19.7624 15 19.4521 15H5ZM5 15L4.4 21"
+                            stroke="#FFE5E5
+" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <h3 class="interest-name">Japonia</h3>
+                    <p class="interest-text">Ceremonia herbaty, subtelny drzeworyt, cudowna architektura i zapierająca
+                        dech w piersiach natura. No i do tego to jedzenie. Japonia, dla mnie kraj pełen kontrastów,
+                        który uwielbiam. Dostosowany i wygodny a jednocześnie - trudny do zycia na codzień. Miejsce, do
+                        którego uwielbiam wracać a jego sprzeczności mnie fascynują.
+                    </p>
+                </div>
+                <div class="column">
+                    <svg width="100px" stroke-width="1.5" height="100px"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                        <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143"
+                            stroke="#FFE5E5
+" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path
+                            d="M16 8.77975C16 9.38118 15.7625 9.95883 15.3383 10.3861C14.3619 11.3701 13.415 12.3961 12.4021 13.3443C12.17 13.5585 11.8017 13.5507 11.5795 13.3268L8.6615 10.3861C7.7795 9.49725 7.7795 8.06225 8.6615 7.17339C9.55218 6.27579 11.0032 6.27579 11.8938 7.17339L11.9999 7.28027L12.1059 7.17345C12.533 6.74286 13.1146 6.5 13.7221 6.5C14.3297 6.5 14.9113 6.74284 15.3383 7.17339C15.7625 7.60073 16 8.17835 16 8.77975Z"
+                            stroke="#FFE5E5
+" stroke-width="1.5" stroke-linejoin="round"></path>
+                        <path d="M6 17L20 17" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M6 21L20 21" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M6 21C4.89543 21 4 20.1046 4 19C4 17.8954 4.89543 17 6 17" stroke="#FFE5E5"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <h3 class="interest-name">Psychologia</h3>
+                    <p class="interest-text">Qvo Vadis, Domine? Myślę, że na pytanie dokąd człowiek idzie i dlaczego
+                        odpowiada psychologia - choć wiadomo, nie możemy zapominac o zawiłościach kultury i
+                        społeczeństwa! To, jak jesteśmy do siebie podobni jest fascynujące. Mimo, że świat pełen jest
+                        różnic, to jednak wszyscy przeżywamy go podobnie i wpadamy w ustalone schematy. Poznanie siebie
+                        i poznanie innych jest ekscytujacą i niekończącą się przygodą.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="section photos-section"><!--Sekcja zdjęcia-->
+        <div class="container"> <!--Divider na całą sekcje-->
+            <h2 class="photos-title">Zdjęcia</h2>
+            <p class="photos-lead">To są zdjęcia które Lubię</p>
+
+            <div class="columns-container columns-3-container"><!--Divider na zdjęcia-->
+                <div class="column"><!--Divider na osobne zdjęcie-->
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/daria-shatova-BphuDA60if4-unsplash.jpg" alt="zrelaksowany kot">
+                        <figcaption>Zdjęcie autorstwa <strong> Daria Shatova </strong> z <strong> Unsplash.com </strong>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="column"><!--Divider na osobne zdjęcie-->
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/edgar-nKC772R_qog-unsplash.jpg" alt="siedzący kot">
+                        <figcaption>Zdjęcie autorstwa <strong> Edgar </strong> z <strong> Unsplash.com </strong>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="column"><!--Divider na osobne zdjęcie-->
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/jezael-melgoza-7H77FWkK_x4-unsplash.jpg" alt="Tokyo Tower">
+                        <figcaption>Zdjęcie autorstwa <strong> Jezael Melgoza </strong> z <strong> Unsplash.com
+                            </strong></figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/moises-alex-WqI-PbYugn4-unsplash.jpg" alt="mężczyzna grający w tenisa">
+                        <figcaption>Zdjęcie autorstwa <strong> Alex Moises </strong> z <strong> Unsplash.com </strong>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="column"><!--Divider na osobne zdjęcie-->
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/shrine.jpg" alt="posążki pokryte trawą">
+                        <figcaption>Zdjęcie autorstwa <strong> Daria Shatova </strong> z <strong> Unsplash.com </strong>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="column"><!--Divider na osobne zdjęcie-->
+                    <figure><!--Przestrzeń na zdjęcie z podpisem-->
+                        <img src="images/cat-shrine.jpg" alt="posążki kotków">
+                        <figcaption>Zdjęcie autorstwa <strong> Daria Shatova </strong> z <strong> Unsplash.com </strong>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="quote" class="section quote-section section-pink"> <!--sekcja na cytat-->
+
+        <div class="container">
+           <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#FFE5E5" stroke-width="1.5">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.25 5C2.25 3.48122 3.48122 2.25 5 2.25H19C20.5188 2.25 21.75 3.48122 21.75 5V15C21.75 16.5188 20.5188 17.75 19 17.75H7.96125C7.58154 17.75 7.2224 17.9226 6.98516 18.2191L4.65418 21.1328C3.85702 22.1293 2.25 21.5657 2.25 20.2895V5ZM9.48099 10.75C9.42305 10.8439 9.35472 10.9437 9.275 11.05C8.93823 11.499 8.47947 11.9599 7.96967 12.4697C7.67678 12.7626 7.67678 13.2374 7.96967 13.5303C8.26256 13.8232 8.73744 13.8232 9.03033 13.5303L9.05192 13.5087C9.53637 13.0243 10.0678 12.4929 10.475 11.95C10.8823 11.4069 11.25 10.7447 11.25 10V8C11.25 7.03352 10.4665 6.25 9.5 6.25H8.5C7.53351 6.25 6.75 7.03351 6.75 8V9C6.75 9.96649 7.53351 10.75 8.5 10.75H9.48099ZM15.275 11.05C15.3547 10.9437 15.4231 10.8439 15.481 10.75H14.5C13.5335 10.75 12.75 9.96648 12.75 9V8C12.75 7.03352 13.5335 6.25 14.5 6.25H15.5C16.4665 6.25 17.25 7.03352 17.25 8V10C17.25 10.7447 16.8823 11.4069 16.475 11.95C16.0678 12.4929 15.5364 13.0243 15.0519 13.5087L15.0303 13.5303C14.7374 13.8232 14.2626 13.8232 13.9697 13.5303C13.6768 13.2374 13.6768 12.7626 13.9697 12.4697C14.4795 11.9599 14.9382 11.499 15.275 11.05Z"
+                    fill="#FFE5E"></path>
+            </svg>
+
+            <p class="quote-text">Najlepiej w życiu ma Twój kot, bo jest przy Tobie</p>
+            <p class="quote-author">Wisława Szymborska, Listy do Kornela Filipowicza</p>
+        </div>
+
+    </section>
+
+    <section id="contact" class="section contact-section"><!--sekcja na formularz kontaktowy-->
+        <div class="container">
+            <h2 class="contact-title">Napisz do mnie!</h2>
+            <form class="contact-form" name="contactForm">
+
+                <label class="label" for="name">Imię</label>
+                <input type="text" id="name" name="name" placeholder="imię" required>
+
+                <label class="label" for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="imie.nazwisko@mail.com" required>
+
+                <label class="label" for="message">Miejsce na Twoja wiadomość</label><textarea id="message" rows="5"
+                    cols="33"></textarea>
+
+                <button type="submit" class="submit-button" id="form-submit">Wyślij</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer section-violet"><!--stopka mojej strony-->
+        <div class="container"><!--Główny divider-->
+            <div class="copyright"><!--Tekst po lewej-->
+                <p>&copy;<!--znaczek do copyrights--> Marta Żabolicka 2024</p>
+                <p>Autor zdjęcia w tle <strong> Su San Lee </strong> z <strong>https://unsplash.com/photos</strong></p>
+
+            </div>
+            <div class="social"><!--Media społecznosciowe-->
+                <div>
+
+                    <a href="https://www.facebook.com/marta.zabolicka" target="_blank">
+                        <svg width="24px" height="24px" stroke-width="1.5"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                            <path
+                                d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                                stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/marta.zabolicka" target="_blank">
+                        <svg width="24px" height="24px" stroke-width="1.5"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                            <path
+                                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                                stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M11 21C11 18 11 15 11 12C11 9.8125 11.5 8 15 8" stroke="#FFE5E5" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M9 13H11H15" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+
+
+                    <a href="https://www.facebook.com/marta.zabolicka" target="_blank">
+                        <svg width="24px" height="24px" stroke-width="1.5"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                            <path
+                                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                                stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M7 17V13.5V10" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="#FFE5E5"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7 7.01L7.01 6.99889" stroke="#FFE5E5" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/marta.zabolicka" target="_blank">
+                        <svg width="24px" height="24px" stroke-width="1.5"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFE5E5">
+                            <path d="M14 12L10.5 14V10L14 12Z" fill="#FFE5E5
+" stroke="#FFE5E5" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
+                                stroke="#FFE5E5" stroke-width="1.5"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
